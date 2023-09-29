@@ -1,41 +1,190 @@
- /* CSS for Calculator Layout */
- *{
-    background-origin: padding-box;
-    color: rgb(0, 0, 0);
-    text-transform: uppercase;
-    background-color: #FAF1E4; 
- }
-h1{
-   text-align: center;
-   text-transform: uppercase;
-   color: #FAF1E4;
-   text-shadow: #ffffff 7px 7px 12px,
-   #698d47 1px 1px 7px;
-   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
- }  
- #calculator {
-    width: 300px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 2px solid hsl(0, 21%, 13%) ;
-    border-radius: 10px;
-    background-color: #CEDEBD;
-    box-shadow: #9EB384 12px 12px 8px;
+ /* Reset some default styles */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-#display {
-    font-size: 24px;
-    text-align: right;
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #111111;
-    border-radius: 5px;
-    background-color: #6925b742;
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    line-height: 1.6;
+    color: #333;
 }
-button {
-    width: 60px;
-    height: 60px;
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+header p {
     font-size: 18px;
-    margin: 5px;
-    background-color: #698d47;
-    border-style: groove;
+    margin-bottom: 30px;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ddd;
+}
+
+/* Hero section styles */
+.hero {
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ff9900;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+/* Main content styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.main-content {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.main-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.main-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+/* Call to action button */
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff9900;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e68a00;
+}
+
+/* Gallery styles */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery-item {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* Team section styles */
+.team {
+    background-color: #f4f4f4;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.team h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.team p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+/* Features section styles */
+.features {
+    background-color: #fff;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.features p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+/* Footer styles */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
 }
